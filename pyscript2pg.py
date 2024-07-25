@@ -4,8 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+
 import csv
 import time
 
@@ -64,13 +63,13 @@ finally:
     driver.quit()
 
 # Save the data to a CSV file
-save_to_csv(all_properties, 'islamabad_properties2.csv')
+save_to_csv(all_properties, 'islamabad_properties.csv')
 
 def insert_into_database(properties):
     conn = psycopg2.connect(
-        dbname="zameen_properties",
-        user="postgres",
-        password="anns",
+        dbname="",
+        user="",
+        password="",
         host="localhost"
     )
     cur = conn.cursor()
