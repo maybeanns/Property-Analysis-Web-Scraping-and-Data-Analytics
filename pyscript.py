@@ -51,17 +51,16 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
 
 try:
-    for page in range(1, 9):  # 8 pages
+    for page in range(1, 9):  # 8 pages total at the time of scraping 
         url = base_url.format(page)
         print(f"Scraping page {page}...")
         property_data = extract_property_data(driver, url)
         all_properties.extend(property_data)
         print(f"Extracted {len(property_data)} properties from page {page}")
-        time.sleep(2)  # Add a delay to be respectful to the server
+        time.sleep(2)
 finally:
     driver.quit()
-
-# Save the data to a CSV file
+
 save_to_csv(all_properties, 'islamabad_properties.csv')
 
 print(f"Total properties extracted: {len(all_properties)}")
