@@ -1,5 +1,6 @@
-# Property-Analysis-Web-Scraping-and-Data-Analytics
- It provides a comprehensive view of the Islamabad property market, allowing for insights into pricing trends, property distributions, and market dynamics.
+# Property Analysis
+
+It provides a comprehensive view of the Islamabad property market, allowing for insights into pricing trends, property distributions, and market dynamics.
 ## Pros
 ![image](https://github.com/user-attachments/assets/fd291747-f21c-4c21-9605-6d485051135a)
 
