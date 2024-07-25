@@ -1,4 +1,6 @@
 # Property Analysis
+![total properties](https://github.com/user-attachments/assets/6ea5b49b-19e1-44ee-9f89-d5b5f3d524a4)
+
 ...
 You can download the dataset from https://www.kaggle.com/datasets/annsk7/zameen-com-islamabad-property-dataset-2024/data 
 
